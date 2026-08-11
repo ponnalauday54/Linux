@@ -1,2 +1,16 @@
-#this is my test YAML
-/bin/bash: line 1: wq: command not found
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: nginx
+    method: fromcode
+    another : label
+  name: nginx-yaml
+spec:
+  containers:
+  - image: nginx
+    name: nginx
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
