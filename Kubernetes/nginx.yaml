@@ -2,12 +2,12 @@ apiVersion: v1
 kind: Pod
 metadata:
   labels:
-    run: http
-  name: http
+    run: nginxprod
+  name: nginxprod
 spec:
   containers:
-  - image: httpd
-    name: http
+  - image: nginx
+    name: nginxprod
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
