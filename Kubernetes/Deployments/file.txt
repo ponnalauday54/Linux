@@ -9,4 +9,14 @@ how to complete a deployment
 # Delete a deployment with 3 replicas
 => k delete deployment.apps <podname>
 
+# display the deployments
+=> k get deployments.apps
 
+# Namespace of the deployment
+=> k describe deployments.apps
+
+# Edit the deployment
+=> k edit deployment.apps
+
+# Notes 
+Deployment does not create the replicas sets but controls the replica sets 
