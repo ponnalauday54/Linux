@@ -7,16 +7,29 @@ how to complete a deployment
 => k create deployment <Pod name> --image=httpd --replicas=3
 
 # Delete a deployment with 3 replicas
-=> k delete deployment.apps <podname>
+=> k delete deployment.apps <pod name>
 
-# display the deployments
-=> k get deployments.apps
+# Display the deployments
+=> k get deployment.apps
 
 # Namespace of the deployment
-=> k describe deployments.apps
+=> k describe deployment.apps
 
 # Edit the deployment
 => k edit deployment.apps
 
 # Notes 
 Deployment does not create the replicas sets but controls the replica sets 
+
+# Create a deployment from a YAML file
+=> k creates deployment Test --image=httpd --replicas=10 -o yaml > deploy.yaml
+
+Now that deploy.yaml has all the information
+=>k apply -f deploy.yaml  - this will create a new 10 pods 
+
+# How to check the replicas - This is something managed by Kubernetes 
+=> k describe replicasets.apps <pod-name> 
+
+# How to watch all the pods getting created and their status
+
+watch -n 1 (delayed every second) "kubectl get pods"
