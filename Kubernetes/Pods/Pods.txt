@@ -1,0 +1,15 @@
+Pre-requisite = Add alias for kubectl as k
+
+# Display existing pods
+k get pods
+
+# Create a pod with name=nginx
+k run <podname> --image=nginx 
+
+# Check the namespace on the Pod - tells you the namespace and container details
+k describe pod nginx
+
+# Create a template Pod with basic details
+k run nginx1 --image=httpd -o yaml > nginx1.yaml
+k apply -f nginx1.yaml
+
