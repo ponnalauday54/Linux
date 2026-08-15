@@ -15,3 +15,7 @@ k apply -f nginx1.yaml
 
 # Create a pod using Dry run - this will not create the pod but instead generate the YAML file which can be modified
 k run nginx2 --image=httpd --dry-run=client -o yaml > nginx2.yaml
+
+# Edit a Pod 
+k edit pod <podname>
+
