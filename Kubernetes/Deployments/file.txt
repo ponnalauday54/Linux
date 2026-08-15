@@ -1,0 +1,12 @@
+how to complete a deployment
+
+# Help to create a deployment
+=> k create deployment -h | less 
+
+# Create a deployment with 3 replicas
+=> k create deployment <Pod name> --image=httpd --replicas=3
+
+# Delete a deployment with 3 replicas
+=> k delete deployment.apps <podname>
+
+
