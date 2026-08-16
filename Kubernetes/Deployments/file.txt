@@ -33,3 +33,18 @@ Now that deploy.yaml has all the information
 # How to watch all the pods getting created and their status
 
 watch -n 1 (delayed every second) "kubectl get pods"
+
+# Refer to deploy-backup for replacing Httpd image but only 2 pods at a time, Max 10 replicas 
+strategy:
+ rollingUpdate:
+   maxSurge: 2 - maximum number of pods at a time
+   maxUnavailable: 0 - Number of pods that can be down
+ type: RollingUpdate
+
+
+
+
+
+
+
+
