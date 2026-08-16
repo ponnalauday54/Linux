@@ -1,4 +1,15 @@
 In Kubernetes the namespaces provide a mechanism for isolating groups of resources within a single cluster.
 # how to display Namespace
-k get namespaces
+=> k get namespaces
+
+# how to create a namespace
+=> k create namespace mealie --dry-run=client -o yaml > mealie.yaml
+=> k apply -f mealie.yaml
+
+# how to set mealie as a default namespace
+=> k config current current-context # this will give you the current context
+=> k config set-context --current --namespace mealie # this will make mealie default namespace 
+
+# Display all the pods under Mealie namespace
+=> k get pods -n mealie
 
