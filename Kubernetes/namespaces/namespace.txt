@@ -1,0 +1,4 @@
+In Kubernetes the namespaces provide a mechanism for isolating groups of resources within a single cluster.
+# how to display Namespace
+k get namespaces
+
