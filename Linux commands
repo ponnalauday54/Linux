@@ -1,1 +1,20 @@
+APT = package Manager 
+sudo = Super user do
+
+# list of all the application that need to be updated
+sudo apt update 
+
+# Upgrade all the application 
+sudo apt upgrade
+
+# how to search for htop packages
+apt search htop
+
+# install and remove packages
+sudo apt install/remove/purge htop
+
+# Search for all the installed packages
+apt search --installed | grep htop
+
+
 
