@@ -1,1 +1,37 @@
 
+# who am i command
+=>whoami = displays the user in the Shell
+
+# present working Directory 
+=> pwd
+
+# What System Is This?
+=> cat /etc/os-release
+
+# Delete the file 
+=> rm <filename>
+
+# which command
+=> Tells you the file path where this file exists in which folder
+
+# Kernel: The core of the operating system that manages hardware, files, and running programs. The kernel is Linux.
+
+# Shell: A program that interprets your commands and communicates with the operating system. Bash is the most common shell.
+
+# Bash: Bourne Again Shell - the default command interpreter on most Linux systems.
+
+# Terminal: The application that provides a text-based interface. Displays text and captures keyboard input.
+
+# Terminal Emulator: Software that simulates a physical terminal from the mainframe era.
+
+# CLI: Command-Line Interface - interacting with a computer by typing text commands.
+
+# GUI: Graphical User Interface - interacting with a computer using windows, icons, and a mouse.
+
+# Prompt: The text that appears waiting for your input, typically showing username, hostname, and current directory.
+
+# Distribution (Distro): A complete operating system built around the Linux kernel, like Ubuntu, Debian, or Arch.
+
+# Open Source: Software whose source code is freely available for anyone to view, modify, and distribute.
+
+# System Calls: Low-level instructions that programs use to request services from the kernel.
