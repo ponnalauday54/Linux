@@ -7,4 +7,6 @@ Ex: head/tail -n 10 /exc/os-release
 grep "error" /etc/passwd
 
 => grep -n "<word>" <path> # this will give the line number of the error
+=> grep -B 2 -A 2 "error" /var/log/syslog (2 before and 2 after the error)
+
 
