@@ -14,7 +14,14 @@ apt search htop
 sudo apt install/remove/purge htop
 
 # Search for all the installed packages
-apt search --installed | grep htop
+apt list --installed | grep htop
 
+# Tree Command 
+tree <path> -L <numberoflevels>
+Ex : tree /etc -L 2
 
+man find          # The find command has many options
+help read         # read is a bash builtin
+grep --help       # Quick overview of grep options
+man -k permission # Find commands related to permissions
 
