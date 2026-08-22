@@ -1,1 +1,10 @@
+# Head/tail Commands
+=>head -n <number of lines> <path>
+Ex: head/tail -n 10 /exc/os-release
+
+# grep 
+=>grep "<word>" <path>
+grep "error" /etc/passwd
+
+=> grep -n "<word>" <path> # this will give the line number of the error
 
