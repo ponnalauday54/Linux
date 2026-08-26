@@ -17,5 +17,11 @@ k apply -f nginx1.yaml
 k run nginx2 --image=httpd --dry-run=client -o yaml > nginx2.yaml
 
 # Edit a Pod 
-k edit pod <podname>
+k edit pod <podname>:wq!
 
+
+# All namespaces
+k get pods --all-namespaces <podname>
+
+#Search the help 
+=> k get pods -
