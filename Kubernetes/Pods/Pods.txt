@@ -31,3 +31,6 @@ k get pods --all-namespaces <podname>
 # how to access with in the Container
 => k exec -it <pod-name> -- /bin/bash
 
+# how to ping pods 
+=> install ping first => apt install iputils-ping => ping <ip-address>
+
