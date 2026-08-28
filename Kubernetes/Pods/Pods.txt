@@ -27,3 +27,7 @@ k get pods --all-namespaces <podname>
 
 # Explain what a Pod is and the components of it 
 => k explain pod
+
+# how to access with in the Container
+=> k exec -it <pod-name> -- /bin/bash
+
