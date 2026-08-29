@@ -13,3 +13,8 @@ In Kubernetes the namespaces provide a mechanism for isolating groups of resourc
 # Display all the pods under Mealie namespace
 => k get pods -n mealie
 
+# how to do port forwarding so that the Deployment on Mealie namespace
+  can talk to the API server and reach the web
+=> k port-forward pods/mealie1-677fb9ddc4-bf4bd 9000
+
+
