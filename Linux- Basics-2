@@ -20,5 +20,6 @@ Birth: 2026-08-24 15:55:17.990121944 +1000
 # how big is the disk 
 sudo du -sh /var/log
 
-
+# Find files containing "network" / Recursive means all the folder and subfolders
+grep -r "network" /etc/ 
 
