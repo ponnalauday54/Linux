@@ -1,0 +1,24 @@
+# Case-Insensitive Search using Grep
+grep -i "error" /var/log/syslog
+
+#Show Line Numbers = provide a line number for each 
+grep -n "error" /var/log/syslog
+
+# complete stats for a file 
+stat /etc/passwd
+
+up430317@MD128080:~$ stat /etc/passwd
+File: /etc/passwd
+size: 1384            Blocks: 8          IO Block: 4096   regular file
+Device: 8,48    Inode: 44904       Links: 1
+Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2026-09-17 11:42:09.405972731 +1000
+Modify: 2026-08-24 15:55:17.994186265 +1000
+Change: 2026-08-24 15:55:17.994186265 +1000
+Birth: 2026-08-24 15:55:17.990121944 +1000
+
+# how big is the disk 
+sudo du -sh /var/log
+
+
+
