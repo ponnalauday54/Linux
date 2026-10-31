@@ -11,6 +11,12 @@
 # Delete the file 
 => rm <filename>
 
+# Uname - To display system information about the machine and the OS 
+=> uname -a 
+
+# hostnamectl - tells the hostname and other details below 
+=> hostnamectl
+
 # which command
 => Tells you the file path where this file exists in which folder
 
