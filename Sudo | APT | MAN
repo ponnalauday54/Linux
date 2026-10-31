@@ -16,6 +16,9 @@ sudo apt install/remove/purge htop
 # Search for all the installed packages
 apt list --installed | grep htop
 
+# size of each disk 
+lsblk
+
 # Tree Command 
 tree <path> -L <numberoflevels>
 Ex : tree /etc -L 2
